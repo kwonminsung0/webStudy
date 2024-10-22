@@ -6,37 +6,49 @@
     <title>HOME_7</title>
 </head>
 <style>
+    div {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+    }
     table {
         border: 1px solid black;
+        border-collapse: collapse;
+        width: 600px;
+        margin: 0 auto;
     }
-    table td, table th {
+    td {
         border: 1px solid black;
-        width: 200px;
-        text-align: center;
-        font-size: 20px;
+        width: 300px;
+    }
+    th {
+        border: 1px solid black;
     }
 </style>
 <body>
-    <h1>수습 국원 지원 양식</h1>
-    <table>
-        <tr>
-            <td rowspan="3">개인정보</td>
-            <td>이름</td>
-            <td colspan="2">&nbsp;</td>
-        </tr>
-        <tr>
-            <td>학과/학번</td>
-            <td colspan="2">&nbsp;</td>
-        </tr>
-        <tr>
-            <td>연락처</td>
-            <td colspan="2">&nbsp;</td>
-        </tr>
-        <tr>
-            <td>지원 분야</td>
-            <td colspan="3">&nbsp;</td>
-        </tr>
-    </table>
+    <div>
+        <h1>수습 국원 지원 양식</h1>
+        <table>
+            <tr>
+                <th rowspan="3">개인정보</th>
+                <th>이름</th>
+                <td colspan="2">&nbsp;</td>
+            </tr>
+            <tr>
+                <th>학과/학번</th>
+                <td colspan="2">&nbsp;</td>
+            </tr>
+            <tr>
+                <th>연락처</th>
+                <td colspan="2">&nbsp;</td>
+            </tr>
+            <tr>
+                <th>지원 분야</th>
+                <td colspan="3">&nbsp;</td>
+            </tr>
+        </table>
+    </div>
     
 </body>
 </html>
