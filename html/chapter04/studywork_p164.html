@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid black;
+            padding: 30px;
+            width: 500px;
+        }
+        label {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>프런트엔드 개발자 지원서</h1>
+        <p>HTML, CSS, 자바스크립트의 기술을 이해하고 실무 경험이 있는 분을 찾습니다.</p>
+        <hr>
+        <form action="#" method="post">
+            <h3>개인 정보</h3>
+            <ul type="none">
+                <li>
+                    <label for="name">이름</label>
+                    <input type="name" name="name" id="name" placeholder="공백 없이 입력하세요"><br>
+                    <label for="tel">연락처</label>
+                    <input type="tel" name="tel" id="tel"><br>
+                </li>
+            </ul>
+
+            <h3>지원 분야</h3>
+            <ul type="none">
+                <li>
+                    <label for="check1"><input type="radio" name="check" id="check1" value="1">웹 퍼블리싱</label><br>
+                    <label for="check2"><input type="radio" name="check" id="check2" value="2">웹 애플리케이션 개발</label><br>
+                    <label for="check3"><input type="radio" name="check" id="check3" value="3">개발 환경 개선</label><br>
+                </li>
+            </ul>
+
+            <h3>지원 동기</h3>
+            <textarea cols="60" rows="5" placeholder="본사 지원 동기를 간략히 써주세요,"></textarea><br>
+            <button type="submit">접수하기</button>
+            <button type="reset">다시 쓰기</button>
+        </form>
+    </div>
+    
+</body>
+</html>
