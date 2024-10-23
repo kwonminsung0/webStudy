@@ -1,0 +1,26 @@
+h1 {
+    display: inline-block;
+    border: 3px solid rgb(255, 89, 0);
+    color: brown;
+}
+h2 {
+    display: inline-block;
+    border: 3px solid rgb(255, 89, 0);
+    color: blue;
+}
+ol {
+    border: 3px solid rgb(255, 89, 0);
+    width: 250px;
+}
+li {
+    color: green;
+}
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td {
+    border: 1px solid black;
+    width: 100px;
+    text-align: center;
+}
