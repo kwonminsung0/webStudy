@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/bac9b21d8b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
@@ -30,11 +33,16 @@
             align-items: center;
         }
         div.nav_logo {
-            font-size: 24px;
-            font-weight: 700;
             display: flex;
             justify-content: baseline;
             align-items: center;
+            
+            font-family: "Kablammo", system-ui;
+            font-optical-sizing: auto;
+            font-size: 24px;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings: "MORF" 0;
         }
         div.nav_logo:hover {
             background-color: aqua;
@@ -54,6 +62,7 @@
         }
         ul.nav_menu a {
             padding: 8px 15px;
+            border-radius: 10px;
         }
         ul.nav_menu a:hover{
             background-color: aqua;
@@ -75,6 +84,7 @@
         ul.nav_icons a {
             font-size: 20px;
             padding: 8px 15px;
+            border-radius: 50%;
         }
         ul.nav_icons a:hover{
             background-color: aqua;
