@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KH_CAFE</title>
+    <script src="https://kit.fontawesome.com/bac9b21d8b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif;
+        }
+        a {
+            text-decoration: none;
+        }
+        nav {
+            width: 80%;
+            margin: 0 auto;
+            padding: 10px;
+            border: 1px solid darkgray;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        div.logo{
+            border-radius: 10px;
+            display: flex;
+            justify-content: baseline;
+            align-items: center;
+
+            font-family: "Playwrite GB S", cursive;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+        }
+        div.logo a{
+            font-size: large;
+            padding: 3px;
+            color: darkgreen;
+        }
+        div.logo:hover{
+            background-color: darkgray;
+        }
+        ul.menu{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        ul.menu a{
+            font-size: large;
+            padding: 10px 10px;
+            color: rgb(132, 43, 23);
+            border-radius: 10px;
+        }
+        ul.menu a:hover{
+            background-color: darkgray;
+        }
+        ul.icon{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        ul.icon a{
+            font-size: large;
+            padding: 10px 15px;
+            color: rgb(132, 43, 23);
+            border-radius: 50%;
+        }
+        ul.icon a:hover{
+            background-color: darkgray;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href=""><i class="fa-solid fa-mug-hot"></i></a>
+            <a href="#">KH-CAFE</a>
+        </div>
+
+        <ul class="menu">
+            <li><a href="#">coffe</a></li>
+            <li><a href="#">juice</a></li>
+            <li><a href="#">tea</a></li>
+            <li><a href="#">dessert</a></li>
+            <li><a href="#">product</a></li>
+        </ul>
+
+        <ul class="icon">
+            <li><a href="#"><i class="fa-solid fa-user user"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-bars bars"></i></a></li>
+        </ul>
+    </nav>
+</body>
+</html>
