@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.background{
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        function changebackground(colorName){
+            let background = window.document.querySelector(".background");
+            background.style.backgroundColor = colorName;
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="changebackground('green')">green</button>
+    <button type="button" onclick="changebackground('orange')">orange</button>
+    <button type="button" onclick="changebackground('purple')">purple</button>
+    <hr>
+    <div class="background"></div>
+    
+</body>
+</html>
