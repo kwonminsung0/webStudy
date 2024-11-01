@@ -1,0 +1,275 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: sans-serif;
+}
+/* 메뉴 */
+div.menu{
+    width: 1200px;
+    height: 120px;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px dotted black;
+    background-color: rgb(255, 247, 213);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: "Playwrite GB S", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+div.menu a{
+    text-decoration: none;
+    color: black;
+}
+div.menu_logo{
+    width: 250px;
+}
+div.menu_logo a{
+    padding: 10px;
+    font-size: 23px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+div.menu_logo a:hover{
+    background-color: rgba(178, 137, 67, 0.5);
+}
+div.menu_list ul{
+    list-style: none;
+    font-size: 23px;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+}
+div.menu_list ul > li > a{
+    display: inline-block;
+    width: 100px;
+    padding: 16px 16px;
+    text-align: center;
+    border-radius: 10px;
+}
+div.menu_list > ul > li:hover > a{
+    background-color: rgba(178, 137, 67, 0.5);
+}
+
+.dropdown{
+    position: relative;
+}
+
+div.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 247, 213, 0.5);
+    width: 100px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+div.dropdown-content a{
+    display: block;
+    padding: 16px 10px;
+    border-radius: 10px;
+}
+
+div.dropdown-content a:hover{
+    background-color: rgba(178, 137, 67, 0.5);
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+div.menu_icons ul{
+    list-style: none;
+    font-size: 25px;
+    display: flex;
+}
+div.menu_icons ul > li > a{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.menu_icons ul > li > a:hover{
+    background-color: rgba(178, 137, 67, 0.5);
+}
+
+/* 회전목마 */
+div.slideshow {
+    border: 1px solid black;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: white;
+    height: 500px;
+    min-width: 960px;
+    position: relative;
+}
+
+div.slideshow_slides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+div.slideshow_slides a {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+}
+div.slideshow_slides a img{
+    width: 1200px;
+    height: 500px;
+    border-radius: 70px 70px;
+}
+
+div.slideshow_nav a{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: white;
+    font-size: 30px;
+    transform: translate(-50%);
+    opacity: 0.5;
+}
+
+div.slideshow_nav a.prev{
+    margin-left: -500px;
+}
+div.slideshow_nav a.next{
+    margin-left: 500px;
+}
+div.slideshow_indicatior {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+div.slideshow_indicatior a {
+    display: inline-block;
+    color: rgba(163, 163, 163, 0.7);
+    padding: 7px;
+    font-size: 15px;
+}
+
+div.slideshow_indicatior a.active {
+    color: rgb(163, 163, 163);
+}
+/* 회원가입 */
+.join{
+    width: 1200px;
+    height: 1000px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.join_top{
+    display: flex;
+    justify-content: space-between;
+}
+.join nav{
+    width: 15%;
+    height: 710px;
+    float: left;
+    background-color: rgb(255, 247, 213);
+    border: 1px dotted black;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.join section{
+   width: 65%;
+   height: 710px;
+   padding-bottom: 10px;
+   float: left;
+   border: 1px dotted black;
+   background-color: rgb(255, 247, 213);
+}
+.join section header{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.join section table{
+    border-collapse: collapse;
+    width: 95%;
+    padding: 3px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+}
+tr{
+    display: flex;
+}
+tr input{
+    width: 80%;
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+tr select{
+    width: 100%;
+    height: 30px;
+    border: none;
+}
+th{
+    padding: 3px;
+    display: flex;    
+}
+th:first-child{
+    width: 100%;
+}
+td{
+    margin: 3px;
+    background-color: white;
+    border: 1px none;
+    display: flex;
+}
+td:nth-child(1){
+    width: 100%;
+}
+td:nth-child(2){
+    width: 100%;
+}
+td:nth-child(3){
+    width: 100%;
+}
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    background-color: rgb(20, 209, 20);
+    color: white;
+}
+.join aside{
+    width: 15%;
+    height: 710px;
+    float: left;
+    background-color: rgb(255, 247, 213);
+    border: 1px dotted black;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.join footer{
+    width: 100%;
+    height: 15%;
+    clear: both;
+    background-color: rgb(255, 247, 213);
+    border: 1px dotted black;
+    margin-top: 10px;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
