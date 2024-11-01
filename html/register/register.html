@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./register.css">
+    <script src="./register.js"></script>
+    <script src="https://kit.fontawesome.com/bac9b21d8b.js" async crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+</head>
+<body onload="onLoad();">
+    <div class="menu">
+        <div class="menu_logo">
+            <a href=""><i class="fa-solid fa-camera-retro"></i><b>MIRE PHOTO</b></a>
+        </div>
+
+        <div class="menu_list">
+            <ul>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">menu</a>
+                    <div class="dropdown-content">
+                        <a href="#">menu1</a>
+                        <a href="#">menu2</a>
+                        <a href="#">menu3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">menu</a>
+                    <div class="dropdown-content">
+                        <a href="#">menu1</a>
+                        <a href="#">menu2</a>
+                        <a href="#">menu3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">menu</a>
+                    <div class="dropdown-content">
+                        <a href="#">menu1</a>
+                        <a href="#">menu2</a>
+                        <a href="#">menu3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">menu</a>
+                    <div class="dropdown-content">
+                        <a href="#">menu1</a>
+                        <a href="#">menu2</a>
+                        <a href="#">menu3</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu_icons">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="carousel">
+        <div class="slideshow">
+            <div class="slideshow_slides">
+                <a href="#"><img src="./img/img1.png" alt="이미지1"></a>
+                <a href="#"><img src="./img/img2.png" alt="이미지2"></a>
+                <a href="#"><img src="./img/img3.png" alt="이미지3"></a>
+                <a href="#"><img src="./img/img4.png" alt="이미지4"></a>
+            </div>
+            <div class="slideshow_nav">
+                <a href="#" class="prev"><i class="fa-solid fa-circle-chevron-left"></i></a>
+                <a href="#" class="next"><i class="fa-solid fa-circle-chevron-right"></i></a>
+            </div>
+            <div class="slideshow_indicatior">
+                <a href="#" class="active"><i class="fa-solid fa-circle"></i></i></a>
+                <a href="#"><i class="fa-solid fa-circle"></i></i></a>
+                <a href="#"><i class="fa-solid fa-circle"></i></i></a>
+                <a href="#"><i class="fa-solid fa-circle"></i></i></a>
+            </div>
+        </div>
+    </div>
+
+    <form action="#" method="post" id="div-join" class="join">
+        <div class="join_top">
+            <nav>nav</nav>
+            <section>
+                <header><h2>MIRE PICTURE</h2></header>
+                <article>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>아이디</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="text" name="id" id="id" value="" required><span></span></td>
+                                <td><input type="text" placeholder="@naver.com"></td>
+                            </tr>
+                            <tr>
+                                <th>비밀번호</th>
+                            </tr>
+                            <tr>
+                                <td><input type="password" name="pwd1" id="pwd1" required><span></span></td>
+                            </tr>
+                            <tr>
+                                <th>비밀번호 재확인</th>
+                            </tr>
+                            <tr>
+                                <td><input type="password" name="pwd2" id="pwd2" value="" required><span></span></td>
+                            </tr>
+                            <tr>
+                                <th>이름</th>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="name" id="name" value="" required><span></span></td>
+                            </tr>
+                            <tr>
+                                <th>생년월일</th>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="year" id="year" placeholder="년(4자)" value="" required><span></span></td>
+                                <td>
+                                    <select name="month" id="month">
+                                        <option value="0">월</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select name="day" id="day">
+                                        <option value="0">일</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>성별</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="gender" id="gender">
+                                        <option value="0">성별</option>
+                                        <option value="1">남</option>
+                                        <option value="2">여</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>본인 확인 이메일</th>
+                            </tr>
+                            <tr>
+                                <td><input type="email" name="email" id="email" placeholder="선택입력" value="" required><span></span></td>
+                            </tr>
+                            <tr>
+                                <th>휴대전화</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="no" id="no">
+                                        <option value="1">대한민국 +82</option>
+                                        <option value="2">미국 +1</option>
+                                        <option value="3">일본 +81</option>
+                                        <option value="4">중국 +86</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="tel" name="tel" id="tel" placeholder="전화번호 입력" value="" required><span></span></td>
+                                <td><button type="button">인증번호 받기</button></td>
+                            </tr>
+                            <tr>
+                                <td><input type="password" name="num" id="num" placeholder="인증번호를 입력하세요" value="" required><span></span></td>
+                            </tr>
+                            <tr>
+                                <div id="btns-submit">
+                                    <td><button type="submit" id="btn-join" value="회원가입" onclick="joinMember();">가입하기</button></td>
+                                    <td><button type="reset" id="btn-cancel" value="취소" onclick="reset();">취소</button></td>
+                                </div>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </section>
+            <aside>aside</aside>
+        </div>
+        <footer>footer</footer>
+    </form>
+</body>
+</html>

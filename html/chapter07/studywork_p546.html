@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showDetail(){
+            document.querySelector('#desc').style.display = "block";
+            document.querySelector('#open').style.display = "none";
+        }
+
+        function hideDetail(){
+            document.querySelector('#desc').style.display = "none";
+            document.querySelector('#open').style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <img src="./media/무궁화.png" alt="무궁화" style="width: 500px; height: 500px;"><br>
+    <button class="over" id="open" onclick="showDetail()">상세 설명 보기</button>
+    <div id="desc" class="detail">
+        <h3>무궁화</h3>
+        <p>
+            무궁화는 아욱목 아욱과에 속하는 낙엽 활엽수 관목으로, 무궁화속의 모식종이다.
+            학명은 (히비스쿠스 시리아쿠스). 그 밖에 근, 목근, 근화, 목근화, 순화, 화노, 훈화초 등 다양한 명칭으로 불린다.
+            꽃말은 그 이름처럼 무궁(다함이 없음). 약 100일 동안 계속하여 화려한 꽃을 피운다.
+            홑꽃은 이른 새벽에 피고 저녁에는 시들어서 날마다 신선한 새 꽃을 보여준다. 꽃말도 이런 특징에서 나온 것이다.
+        </p>
+        <button id="close" onclick="hideDetail()">상세 설명 닫기</button>
+    </div>
+</body>
+</html>
